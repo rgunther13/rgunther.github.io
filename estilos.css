@@ -1,0 +1,37 @@
+header {
+    width: 100%;
+    /* [disabled]background-color: #D4B6E3; */
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    /* [disabled]color: #00D1BC; */
+    text-align: center;
+	#text-shadow: 1px 0px #C00081;
+		
+}
+	a{
+    color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+	}
+	
+	p{
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 60px;
+}
+	.table_foter{
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #CCCCCC;
+    text-align: center;
+    width: 60%;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    text-transform: capitalize;
+    display: table-cell;
+    border-radius: 36px;
+	}
+	.a_mail{
+    color: #FFFFFF;
+    text-decoration: none;
+	}
