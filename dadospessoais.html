@@ -1,87 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<link href="estilos.css" rel="stylesheet" type="text/css">
-<title>The Rock  - Dados Pessoais</title>
-</head>
+	<head>
+		<title>Biografia Dwayne Johnson - The Rock - Dados Pessoais</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style>
+			body {
+				margin: 0;
+				font-family: Arial, Helvetica, sans-serif;
+				color: #000000;
+				background: #000000;
+			}
 
-<body>
-	<header><h1>Dwayne Johnson - The Rock</h1>
-	<div>
-  		<nav class="a_menu"><a href="index.html">Sobre</a> |<a href="antesdafama.html"> Antes da Fama</a> | <a href="curiosidades.html">Curiosidades</a> | <a href="dadospessoais.html">Dados Pessoais</a> | <a href="filmografia.html">Filmografia</a>| <a href="awwe.html">A WWE</a></nav>
-	</div>
-</header>
-<div>
-   <table width="60%" border="0" align="center" cellspacing="2">
-  <tbody>
-    <tr>
-      <th align="left" scope="col" size="50%" >
-		  <h1>Dados Pessoais:</h1>
-		   Nome completo:<br>
-Dwayne Douglas Johnson<br>
-		   <br>
-Nascimento:&nbsp; <br>
-2 de maio de 1972 (48 anos)
-Hayward, Califórnia<br>
-<br>
-Estatura: <br>
-1,96 m (6 ft 5 in)<br>
-<br>
-Ocupação:<br>
-ator, produtor e lutador profissional<br>
-<br>
-Período de atividade: <br>
-1996-2004, 2011-2019 (lutador profissional)
-1999-presente (ator)<br>
-<br>
-<hr width="60%" size="2"><br>
-<em> Carreira na luta livre profissional<br>
-<br>
-</em>Nomes de
-ringue: <br>
-Flex Kavana
-Rocky Maivia,&nbsp; The Rock<br>
-<br>
-Peso:&nbsp; 260 lb (118 kg)<br>
-<br>
-Anunciado de:&nbsp; Miami, Flórida<br>
-<br>
-Treinado por:&nbsp; Pat Patterson
-Rocky Johnson,&nbsp; Tom Prichar<br>
-<br>
-Estreia: 1996<br>
-&nbsp;<br>
-Aposentadoria: 2019</th>
-      <th align="center" valign="top" scope="col">
-		  <figure><img src="imagens/foto_pessoal.jpg" width="370" height="510" alt=""/>
-<figcaption>Dwayne Johnson - na estreia de Hércules em 2014. &nbsp;</figcaption></figure></th>
-    </tr>
-  </tbody>
-</table>
-</div>
-	<div><table width="60%" border="0" align="center" cellspacing="2">
-  <tbody>
-    <tr>
-      <th scope="col">
-		  <hr  size="2">
-		  <cite>“Sempre me perguntam: ‘Qual é o segredo do sucesso?’ Mas não há segredos. Seja humilde. Esteja com fome. E sempre seja o trabalhador mais duro da sala. ”- Dwayne Johnson “ The Rock ”.</cite></th>
-    </tr>
-  </tbody>
-</table>
-</div>
-	
-	<hr width="60%" size="2">
-<footer><table width="60%" border="0" align="center" cellspacing="2">
-  <tbody>
-    <tr>
-      <th class="table_foter" scope="col">Por :<a href="mailto:rgunther13@hotmail.com" class="a_mail"> Rodrigo Cassiano Günther</a><br>
-        <a href="mailto:thiago_schmidt_10@hotmail.com" class="a_mail">Thiago Vinicius Schmidt</a></th>
-    </tr>
-  </tbody>
-</table>
+			.topnav {
+				overflow: hidden;
+				background-color: #fff;
+					
+			}
 
-  
-</footer>
-</body>
+			.topnav a {
+				float:left;
+				display: block;
+				color: #000000;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+						
+			}
+
+			.topnav a:hover {
+				background-color: #ddd;
+				color: black;
+				transition-duration: 2s;
+				
+			}
+
+			.topnav a.active {
+				background-color: #000000;
+				color: white;
+			}
+
+			.topnav .icon {
+				display: none;
+			}
+
+			@media screen and (max-width: 600px) {
+			.topnav a:not(:first-child) {display: none;}
+			.topnav a.icon {
+				float: right;
+				display: block;
+			}
+			}
+
+			@media screen and (max-width: 600px) {
+			.topnav.responsive {position: relative;}
+			.topnav.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			.topnav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid-container">
+			<nav>
+				<div class="topnav" id="myTopnav">
+					<a href="index.html">Sobre</a>
+					<a href="antesdafama.html">Antes da Fama</a>
+					<a href="curiosidades.html">Curiosidades</a>
+					<a href="dadospessoais.html" class="active">Dados Pessoais</a>
+					<a href="filmografia.html">Filmografia</a>
+					<a href="awwe.html">A WWE</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+				</div>
+
+				<script>
+					function myFunction() {
+						var x = document.getElementById("myTopnav");
+						if (x.className === "topnav") {
+							x.className += " responsive";
+						} else {
+							x.className = "topnav";
+						}
+					}
+				</script>
+			</nav>
+			<main>
+				<div class="flex-container">
+				  <div class="flex-item-left">
+					<h3>Dwayne Johnson - The Rock</h3>
+				    <h1>Dados Pessoais:</h1>
+		   				<p>
+					    <strong>Nome completo:</strong> Dwayne Douglas Johnson </p>		   
+						<p>
+						  <strong>Nascimento:</strong> 2 de maio de 1972 (48 anos) Hayward, Califórnia
+					    </p>
+						<p>
+						  <strong>Estatura:</strong> 1,96 m (6 ft 5 in)
+				      </p>
+						<p>
+					    <strong> Ocupação:</strong> ator, produtor e lutador profissional
+					    </p>
+				      <p>
+						<strong> Período de atividade:</strong> 1996-2004, 2011-2019 (lutador profissional), 1999-presente (ator)
+					  </p>
+		  	        <h1>Carreira na luta livre profissional</h1>
+					  <p>
+							<strong> Nomes de ringue:</strong> Flex Kavana, Rocky Maivia, The Rock
+				      </p>
+					  <p>
+						  <strong>Peso:</strong> 260 lb (118 kg)
+					  </p>
+					  <p>
+						  <strong>Anunciado de:</strong> Miami, Flórida
+					  </p>
+					  <p>
+				      <strong> Treinado por:</strong> Pat PattersonRocky Johnson, Tom Prichar
+					  </p>
+					  <p>
+						  <strong>Estreia:</strong> 1996
+					  </p>
+					  <p>
+						  <strong>Aposentadoria:</strong> 2019
+					  </p>
+					</div>
+					<div class="flex-item-right">
+						<figure>
+							<img src="imagens/foto_pessoal.jpg" alt="Dwayne Johnson - na estreia de Hércules em 2014"/>
+							<figcaption>Dwayne Johnson - na estreia de Hércules em 2014</figcaption>
+						</figure>
+					</div>
+				</div>
+			</main>
+			<footer>				
+				<cite>
+					“Sempre me perguntam: ‘Qual é o segredo do sucesso?’ Mas não há segredos. Seja humilde. Esteja com fome. E sempre seja o trabalhador mais duro da sala. ”<br>Dwayne Johnson “ The Rock ”
+				</cite>
+				<hr width="95%" size="2">
+				Por:<a href="mailto:rgunther13@hotmail.com">Rodrigo Cassiano Günther</a><br>
+				&nbsp;<a href="mailto:thiago_schmidt_10@hotmail.com">Thiago Vinicius Schmidt</a>
+			</footer>
+		</div>
+	</body>
 </html>
+
