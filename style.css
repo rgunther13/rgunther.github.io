@@ -16,13 +16,13 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #FFF;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -32,11 +32,14 @@ body {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  transition-duration: 0.5s;
+  border-radius: 30px;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #000000;
   color: white;
+  border-radius: 30px;
 }
 
 .topnav .icon {
@@ -113,7 +116,7 @@ a {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.5fr 0.2fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
     grid-template-areas:
       "menu"
       "main"
@@ -175,3 +178,115 @@ li {text-align: left;}
 	
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+input{
+	width:100%;
+	padding:12px 20px;
+	margin:8px 0;
+	display:inline-block;
+	border:1px solid #ccc;
+	border-radius:8px;
+	box-sizing:border-box;
+}
+
+
+input[type=submit], button{
+	width:30%;
+	background-color: #ddd;
+	color: #000;
+	padding: 14px 20px;
+	margin:8px 0;
+	border:none;
+	border-radius: 30px;
+	cursor:pointer;
+}
+
+input[type=button], button{
+	width:30%;
+	background-color: #ddd;
+	color: #000;
+	padding: 14px 20px;
+	margin:8px 4px;
+	border:none;
+	border-radius: 30px;
+	cursor:pointer;
+	float:left;
+}
+
+
+#save {
+	display: none;
+	background: green;
+	color: #fff;
+}
+
+form div.form-action-buttons{
+	text-align:right;
+}
+
+.buttonEdit{
+	width:80px;
+	background-color:green;
+	color: #FFF;
+}
+
+
+.buttonDel{
+	width:80px;
+	background-color:red;
+	color: #FFF;
+}
+
+
+
+.buttonDel:hover, .buttonEdit:hover{
+	width:80px;
+	background-color:#000;
+	color: #FFF;
+}
+
+
+
+
+
+#submit{
+	background-color: red;
+	color: #FFF;
+}
+
+
+
+#update{
+	background-color: green;
+	color: #FFF;
+}
+
+
+
+
+#submit:hover{
+	background-color: #000;
+	color: #FFF;
+}
+
+
+
+#update:hover{
+	background-color:  #000;
+	color: #FFF;
+}
+.tabelacomentario {
+	width: 100%;
+}

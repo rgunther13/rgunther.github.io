@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+		<title>The Rock - Comentários</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="mostrarDados();">
+	<div class="grid-container">
+			<nav>
+				<div class="topnav" id="myTopnav">
+					<a href="index.html">Sobre</a>
+					<a href="antesdafama.html">Antes da Fama</a>
+					<a href="curiosidades.html">Curiosidades</a>
+					<a href="dadospessoais.html">Dados Pessoais</a>
+					<a href="filmografia.html">Filmografia</a>
+					<a href="awwe.html">A WWE</a>
+					<a href="#" class="active">Comentários</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+				</div>
+
+				<script>
+					function myFunction() {
+						var x = document.getElementById("myTopnav");
+						if (x.className === "topnav") {
+							x.className += " responsive";
+						} else {
+							x.className = "topnav";
+						}
+					}
+				</script>
+			</nav>
+			<main>
+				<div class="flex-container">
+					<div class="flex-item-left">
+						<h3>Dwayne Johnson - The Rock</h3>
+						<h1>Deixe seu comentário:</h1>
+						<form id="FormularioComentario" class="meuFormulario">
+                        
+							<div class="form-input">
+								<input type="text" name="nomeUsuario" 
+								id="nomeUsuario" placeholder="Nome" value="">
+							</div>
+							<div>								
+								<input type="textarea" name="comentarioUsuario" 
+								id="comentarioUsuario" placeholder="Comentário" value="">								
+							</div>
+							<div>
+								<input type="text" name="telefoneUsuario" 
+								id="telefoneUsuario" placeholder="Telefone" value="">
+							</div>
+							<div>
+								<input type="text" name="emailUsuario" 
+								id="emailUsuario" placeholder="Email" value="">
+							</div>
+							<div  class="form-action-buttons">
+								<input type="submit" value="Enviar" class="btnSubmit" id="submit" onclick="criarDados();">
+								<input type="button" value="Atualizar" class="btnUpdate" id="update" onclick="atualizarDados();">
+							</div>
+						</form>
+					</div>
+					<div class="flex-item-right">
+						<td>
+							<table class="tabelacomentario">
+								<thead>
+									<tr>
+										<th>Nome</th>
+										<th>Comentário</th>
+										<th>Telefone</th>
+										<th>Email</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody id="ListaComentarios">
+
+								</tbody>
+							</table>
+						</td>
+						</tr>
+						<script src="script.js"></script>
+					</div>
+				</div>
+			</main>
+			<footer>				
+				<cite>
+					“Eu gosto de usar os tempos difíceis do passado para me motivar hoje. ”- Dwayne Johnson, “
+					The Rock ”
+				</cite>
+				<hr width="95%" size="2">
+				Por:<a href="mailto:rgunther13@hotmail.com">Rodrigo Cassiano Günther</a><br>
+				&nbsp;<a href="mailto:thiago_schmidt_10@hotmail.com">Thiago Vinicius Schmidt</a>
+			</footer>
+		</div>
+</body>
+</html>
